@@ -3,9 +3,9 @@
 Este proyecto es una simulación de la página web de Goiko, desarrollado con HTML, CSS y JavaScript. El objetivo es replicar el diseño lo más parecido posible y aldunas funcionalidades básicas de la qeb oficial de Goiko.
 
 ## Tecnologías utilizadas
- -HTML
- -CSS
- -JavaScript
+ *HTML
+ *CSS
+ *JavaScript
 
  ##Instalación
 
@@ -15,9 +15,9 @@ Este proyecto es una simulación de la página web de Goiko, desarrollado con HT
 
  Funcionalidades
 
- ·Diseño responsive
- ·Interacciones básicas con JavaScript
- ·Estructura similar a la página de Goiko
+ -Diseño responsive
+ -Interacciones básicas con JavaScript
+ -Estructura similar a la página de Goiko
 
  Capturas de pantalla
 
