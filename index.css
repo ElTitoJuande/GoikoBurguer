@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "knockout...";
+     /* https://www.1001fonts.com/knockout-font.html */
+}
+
+body {
+    font-size: 15px;
+    font-family: "system-ui";
+    background: black;
+}
+.wrapper{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 142.5rem;
+}
+.header_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a.logo_principal {
+    text-decoration: none;
+}
+
+a .logo_goiko {
+    fill: white;
+    width: 50px;
+    height: auto;
+}
+
+.menu-toggle {
+    all: unset;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+}
