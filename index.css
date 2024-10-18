@@ -5,7 +5,10 @@
     font-family: "knockout...";
      /* https://www.1001fonts.com/knockout-font.html */
 }
-
+@font-face{
+    font-family:"Knockout Bold";
+    src: url("Knockout-Bold.otf");
+}
 body {
     font-size: 15px;
     font-family: "system-ui";
