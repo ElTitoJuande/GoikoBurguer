@@ -4,25 +4,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "knockout...";
-     /* https://www.1001fonts.com/knockout-font.html */
+    font-family: "Konckout";
+    /* https://www.1001fonts.com/knockout-font.html */
 }
-@font-face{
-    font-family:"Knockout Bold";
-    src: url("Knockout-Bold.otf");
+
+@font-face {
+    font-family: 'Konckout';
+    src: url('./img/Fuentes/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2 ');
+    font-style: normal;
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Konckout2';
+    src: url('./img/Fuentes/Knockout-HTF33-JuniorHeviwt.291432cdf9638ce91c1d.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     font-size: 15px;
     font-family: "system-ui";
     background: black;
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
     max-width: 142.5rem;
 }
+
 .header_wrap {
     align-items: center;
     display: flex;
@@ -30,8 +43,26 @@ body {
     margin-top: 20px;
 
 }
-.div_logo{
+
+.div_logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_menu {
+    margin-left: 1rem;
+}
+
+.button_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mascara {
+    position: relative;
+    overflow: hidden;
 }
 
 nav {
@@ -55,4 +86,63 @@ a .logo_goiko {
     cursor: pointer;
     color: white;
     font-size: 40px;
+}
+
+.btn {
+    font-family: "Knockout";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 32px;
+    padding: .75rem 1rem;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.btn_red {
+    font-family: "Knockout";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee2737;
+    border: 2px #ee2737 solid;
+    border-radius: 32px;
+    padding: .75rem 1rem;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+#kevin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.kevin_text_mov {
+    position: absolute;
+    top: calc(50% + 2vh);
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.fila_text_mov {
+    position: relative;
+    overflow: hidden;
 }
