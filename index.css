@@ -17,15 +17,21 @@ body {
     background: black;
 }
 .wrapper{
+    width: 100%;
+    margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
     max-width: 142.5rem;
 }
 .header_wrap {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 
+}
+.div_logo{
+    display: flex;
 }
 
 nav {
