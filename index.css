@@ -24,7 +24,7 @@
 
 body {
     font-size: 15px;
-    font-family: "system-ui";
+    font-family: "Knockout";
     background: black;
 }
 
@@ -129,20 +129,85 @@ a .logo_goiko {
 }
 
 #kevin {
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    position: absolute;
+    top: calc(30% + 2vh);
 }
 
 .kevin_text_mov {
-    position: absolute;
-    top: calc(50% + 2vh);
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.fila_text_mov {
+    width: 100rem;
+    font-family: "Knockout2";
     position: relative;
     overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    white-space: nowrap;
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+
+.row1::after,
+.row2::after,
+.row3::after,
+.row4::after {
+    content: ' Kevin Bacon Kevin Bacon Kevin Bacon Kevin Bacon Kevin Bacon Kevin Bacon';
+}
+
+.row1,
+.row3 {
+    animation: slideLeft 10s linear infinite;
+}
+
+.row2,
+.row4 {
+    animation: slideRight 10s linear infinite;
+
+}
+
+.text_stroked {
+    font-size: 48px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+}
+
+.text_filled {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
