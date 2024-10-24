@@ -28,7 +28,7 @@ body {
     background: black;
 }
 
-.wrapper {
+.header {
     width: 100%;
     margin: 0 auto;
     padding-left: 4rem;
@@ -130,7 +130,7 @@ a .logo_goiko {
     align-items: center;
     color: white;
     position: absolute;
-    margin-top: -7rem;
+    margin-top: -16rem;
 }
 
 .kevin_container {
@@ -145,26 +145,31 @@ a .logo_goiko {
 }
 
 .kevin_container span {
-    line-height: 0.9;
+    line-height: 5.125rem;
 }
 
-.row {
+.kevin_container .row {
     display: flex;
     white-space: nowrap;
-    font-size: 8rem;
-    overflow: hidden;
+    /*quitar salto de linea */
+    width: 100vw;
+}
+
+.kevin_container .row span {
+    display: inline-block;
+    font-size: 6rem;
+    line-height: 5.125rem;
+    width: 100vw;
 }
 
 .row1,
 .row3 {
-    animation: slideLeft 50s linear infinite;
+    animation: slideLeft 24s linear infinite;
 }
 
 .row2,
 .row4 {
-    animation: slideRight 50s linear infinite;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: slideRight 24s linear infinite;
 
 }
 
@@ -194,23 +199,33 @@ a .logo_goiko {
 
 @keyframes slideRight {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 }
 
 .burger360 {
+    position: absolute;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     margin: 0;
     line-height: 1;
     border: none;
-    position: absolute;
-    z-index: 10;
+    margin-top: 13rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+.burger360 video {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
