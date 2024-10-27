@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Konckout";
+    max-width: 100%;
     /* https://www.1001fonts.com/knockout-font.html */
 }
 
@@ -228,4 +229,65 @@ a .logo_goiko {
     width: 100%;
     height: auto;
     max-width: 600px;
+}
+
+.promociones {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.promociones_slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 600%;
+}
+
+.promo {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.promo img {
+    width: 100%;
+    display: block;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./img/ICONS/home-featured-prev.2b63d30afc59bd47926c.svg');
+    background-size: cover; 
+    background-position: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./img/ICONS/home-featured-next.bf9038a41d888d42c140.svg');
+    background-size: cover; 
+    background-position: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
