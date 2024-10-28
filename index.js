@@ -1,7 +1,7 @@
 //Funciíon de scroll para Kevin Bacon
 window.addEventListener("scroll", function() {
     const burger360js = document.querySelector(".burger360");
-    const maxScroll = 300; //hacer scroll para que el div desaparezca
+    const maxScroll = 1000; //hacer scroll para que el div desaparezca
     const scrollTop = document.documentElement.scrollTop;
 
     // Calcula la nueva opacidad basada en el scroll
