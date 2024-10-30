@@ -333,6 +333,7 @@ a .logo_goiko {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 5%;
 }
 
 .carta_container {
@@ -349,10 +350,6 @@ a .logo_goiko {
 .carta_text_container {
   font-size: 6rem;
   line-height: 5.125rem;
-}
-
-.carta_contador {
-  position: relative;
 }
 
 .carta_text_container span {
@@ -379,13 +376,29 @@ a .logo_goiko {
   justify-content: center;
   align-items: center;
   height: 550px;
+  margin: 1%;
+  margin-top: 5%;
 }
-.carta_carrusel_img{
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 0 2px #fff;
-    position: relative;
-    border-radius: 1rem;
-    padding: 6px;
+.carta_carrusel_img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px #fff;
+  position: relative;
+  border-radius: 1rem;
+  padding: 0%;
+  margin: 1%;
+}
+
+.carta_carrusel_img div{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.carta_contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
