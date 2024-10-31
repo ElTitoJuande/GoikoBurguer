@@ -398,7 +398,10 @@ justify-content: center;
 
 
 .carta_contador {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  display: grid;
+    grid-template-columns: 1.4fr repeat(2, 1fr) 1.4fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
 }
