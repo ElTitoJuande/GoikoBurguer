@@ -91,7 +91,6 @@ a .logo_goiko {
 }
 
 .btn {
-  font-family: "Knockout";
   font-size: 1rem;
   line-height: 1rem;
   text-transform: uppercase;
@@ -110,7 +109,6 @@ a .logo_goiko {
 }
 
 .btn_red {
-  font-family: "Knockout";
   font-size: 1rem;
   line-height: 1rem;
   text-transform: uppercase;
@@ -379,29 +377,155 @@ a .logo_goiko {
   margin: 1%;
   margin-top: 5%;
 }
-.carta_carrusel_img {
+
+.carta_carrusel_marco {
   display: block;
   width: 100%;
-  overflow: hidden;
-  box-shadow: 0 0 0 2px #fff;
-  position: relative;
-  border-radius: 1rem;
   padding: 0%;
   margin: 1%;
 }
 
-.carta_carrusel_img div{
-display: flex;
-align-items: center;
-justify-content: center;
+.carta_img {
+  overflow: hidden;
+  box-shadow: 0 0 0 2px #fff;
+  position: relative;
+  border-radius: 1rem;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.carta_img:hover .overlay {
+  background-color: rgba(155, 0, 0, 0.5);
+}
 
 .carta_contador {
-  margin: 0 auto;
-  display: grid;
-    grid-template-columns: 1.4fr repeat(2, 1fr) 1.4fr repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 10% 10% 10%;
+}
+
+.carta_contador span {
+  font-size: 2.25rem;
+}
+
+.carta_contador_img {
+  padding: 5% 10% 10% 10%;
+}
+
+#club_goiko {
+  background: linear-gradient(to bottom, transparent, rgb(150, 29, 39));
+}
+
+.club {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  min-height: 65vh;
+}
+
+.club_moneda {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Ajusta los valores de la sombra */
+  padding: 10px;
+}
+
+.club_text p {
+  color: white;
+  padding: 10px 20px;
+}
+
+.club_text h2 {
+  font-size: 2rem;
+  color: white;
+  padding: 10px 20px;
+}
+
+.coche_div {
+  position: relative;
+}
+
+.coche_text {
+  background: linear-gradient(to bottom, transparent, black);
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.coche_text h2 {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.coche_text p {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.coche_text h3 {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.goikocina_text {
+  background: linear-gradient(to bottom, transparent, black);
+  color: white;
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+}
+
+.goikocina_text h2 {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.goikocina_text p {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.goikocina_text h3 {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  margin-bottom: 16px;
 }
