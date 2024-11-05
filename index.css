@@ -493,6 +493,7 @@ a .logo_goiko {
   color: #fff;
   margin-bottom: 16px;
 }
+
 .goikocina_text {
   background: linear-gradient(to bottom, transparent, black);
   color: white;
@@ -509,6 +510,7 @@ a .logo_goiko {
   color: #fff;
   margin-bottom: 16px;
   width: 60%;
+  position: absolute;
 }
 
 .goikocina_text p {
@@ -528,4 +530,33 @@ a .logo_goiko {
   line-height: 1.5625rem;
   color: #fff;
   margin-bottom: 16px;
+}
+
+#news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  background-color: #000000;
+  filter: drop-shadow(0 100px 0 white);
+}
+
+#news>div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  width: 95%;
+}
+
+#news>div:nth-child(1)>article {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  margin-bottom: 3rem;
+  cursor: pointer;
 }
